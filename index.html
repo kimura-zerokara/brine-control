@@ -8,26 +8,26 @@
 <body>
     <h1>ブライン濃度調整計算シート</h1>
     <form id="calculation-form">
-        <label for="input1">入力項目1:</label>
+        <label for="input1">測定したブラインの温度:</label>
         <input type="number" id="input1" name="input1" required>
         <br>
-        <label for="input2">入力項目2:</label>
+        <label for="input2">酒精計での濃度測定値:</label>
         <input type="number" id="input2" name="input2" required>
         <br>
-        <label for="input3">入力項目3:</label>
+        <label for="input3">現状の水槽内のブライン水位:</label>
         <input type="number" id="input3" name="input3" required>
         <br>
         <button type="button" onclick="calculate()">計算する</button>
     </form>
     <h2>計算結果:</h2>
     <div id="results">
-        <div>出力項目1: <span id="output1"></span></div>
-        <div>出力項目2: <span id="output2"></span></div>
-        <div>出力項目3: <span id="output3"></span></div>
-        <div>出力項目4: <span id="output4"></span></div>
-        <div>出力項目5: <span id="output5"></span></div>
-        <div>出力項目6: <span id="output6"></span></div>
-        <div>出力項目7: <span id="output7"></span></div>
+        <div>アルコール濃度(vol%): <span id="output1"></span></div>
+        <div>アルコール濃度(wt%) <span id="output2"></span></div>
+        <div>水槽から廃棄するブライン量(kg): <span id="output3"></span></div>
+        <div>追加する通常ブライン量(シュンコールB65)(kg): <span id="output4"></span></div>
+        <div>追加する通常ブライン量(シュンコールB65)(缶): <span id="output5"></span></div>
+        <div>追加する高濃度ブライン量(シュンコールC)(kg): <span id="output6"></span></div>
+        <div>追加する高濃度ブライン量(シュンコールC)(缶): <span id="output7"></span></div>
     </div>
     <script src="script.js"></script>
 </body>
